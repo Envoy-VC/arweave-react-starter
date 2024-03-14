@@ -8,15 +8,15 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: '',
-	plugins: [react(), UnheadVite(), tsconfigPaths(), ViteImageOptimizer()],
-	server: {
-		port: 3000,
-	},
-	resolve: {
-		alias: {
-			'~': path.resolve(__dirname, './src'),
-			$: path.resolve(__dirname, './public'),
-		},
-	},
+  base: '',
+  plugins: [react(), UnheadVite(), tsconfigPaths(), ViteImageOptimizer()],
+  server: {
+    port: 3000,
+  },
+  resolve: {
+    alias: {
+      '~': path.resolve(__dirname, './src'),
+      $: path.resolve(__dirname, './public'),
+    },
+  },
 });

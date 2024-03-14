@@ -7,14 +7,14 @@ import Home from '~/pages/home';
 import Contact from '~/pages/contact';
 
 function App() {
-	return (
-		<HashRouter>
-			<Routes>
-				<Route path={'/'} element={<Home />} />
-				<Route path={'/contact'} element={<Contact />} />
-			</Routes>
-		</HashRouter>
-	);
+  return (
+    <HashRouter>
+      <Routes>
+        <Route path={'/'} element={<Home />} />
+        <Route path={'/contact'} element={<Contact />} />
+      </Routes>
+    </HashRouter>
+  );
 }
 
 export default App;
